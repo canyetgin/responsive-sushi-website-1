@@ -162,8 +162,9 @@ img {
 }
 @media screen and (max-width: 767px) {
   .nav__menu {
+    top: -100%;
     position: fixed;
-    top: 0;
+    
     left: 0;
     background: var(--body-color);
     width: 100%;
@@ -181,4 +182,41 @@ img {
 }
 
 .nav__link {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  transition: color 0.4s;
+}
+
+.nav__link:hover {
+  color: var(--first-color);
+}
+.nav__close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav__img-1,
+.nav__img-2 {
+  position: absolute;
+  opacity: 0.2;
+}
+
+.nav__img-1 {
+  width: 100px;
+  top: 0.75rem;
+  left: -2rem;
+  transform: rotate(165deg);
+}
+.nav__img-2 {
+  width: 50px;
+  right: -1rem;
+  bottom: 0;
+  transform: rotate(-30deg);
+}
+
+.show-menu{
+  top:0;
 }
