@@ -571,3 +571,64 @@ body.dark-theme {
 .active-link {
   color: var(--first-color);
 }
+
+.footer {
+  position: relative;
+  padding-block: 3rem 2rem;
+  overflow: hidden;
+}
+
+.footer-container {
+  row-gap: 3rem;
+}
+
+.footer-logo {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  color: var(--title-color);
+  font-family: var(--title-font);
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 1rem;
+  transition: color 0.3s;
+}
+
+.footer-logo img {
+  width: 25px;
+}
+
+.footer-logo:hover {
+  color: var(--first-color);
+}
+.footer-description,
+.footer-link,
+.footer-information {
+  font-size: var(--small-font-size);
+}
+
+.footer-content,
+.fooer-links {
+  display: grid;
+}
+
+.footer-content {
+  grid-template-columns: repeat(2, max-content);
+  gap: 2.5rem;
+}
+
+.footer-title {
+  font-size: var(--h3-font-size);
+  margin-bottom: 1.5rem;
+}
+
+.footer-links {
+  row-gap: 0.5rem;
+}
+.footer-link {
+  color: var(--text-color);
+  transition: color 0.3s;
+}
+.footer-link:hover {
+  color: var(--first-color);
+}
