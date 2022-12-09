@@ -93,13 +93,13 @@ img {
   padding-block: 5rem 1rem;
 }
 
-.section__title {
+.section-title {
   font-size: var(--h1-font-size);
   font-family: var(--title-font);
   margin-bottom: 1.5rem;
 }
 
-.section__subtitle {
+.section-subtitle {
   display: block;
   font-size: var(--h2-font-size);
   font-family: var(--subtitle-font);
@@ -107,8 +107,8 @@ img {
   margin-bottom: 0.5rem;
 }
 
-.section__title,
-.section__subtitle {
+.section-title,
+.section-subtitle {
   text-align: center;
 }
 
@@ -133,13 +133,13 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-.nav__logo,
-.nav__toggle,
-.nav__close {
+.nav-logo,
+.nav-toggle,
+.nav-close {
   display: flex;
   color: var(--title-color);
 }
-.nav__logo {
+.nav-logo {
   align-items: center;
   column-gap: 0.5rem;
   font-family: var(--title-font);
@@ -148,20 +148,20 @@ img {
   transition: color 0.3s;
 }
 
-.nav__logo img {
+.nav-logo img {
   width: 25px;
 }
 
-.nav__logo:hover {
+.nav-logo:hover {
   color: var(--first-color);
 }
 
-.nav__toggle {
+.nav-toggle {
   font-size: 1.5rem;
   cursor: pointer;
 }
 @media screen and (max-width: 767px) {
-  .nav__menu {
+  .nav-menu {
     top: -100%;
     position: fixed;
 
@@ -174,23 +174,23 @@ img {
   }
 }
 
-.nav__list {
+.nav-list {
   display: flex;
   flex-direction: column;
   text-align: center;
   row-gap: 1.5rem;
 }
 
-.nav__link {
+.nav-link {
   color: var(--title-color);
   font-weight: var(--font-medium);
   transition: color 0.4s;
 }
 
-.nav__link:hover {
+.nav-link:hover {
   color: var(--first-color);
 }
-.nav__close {
+.nav-close {
   position: absolute;
   top: 1rem;
   right: 1.5rem;
@@ -198,19 +198,19 @@ img {
   cursor: pointer;
 }
 
-.nav__img-1,
-.nav__img-2 {
+.nav-img-1,
+.nav-img-2 {
   position: absolute;
   opacity: 0.2;
 }
 
-.nav__img-1 {
+.nav-img-1 {
   width: 100px;
   top: 0.75rem;
   left: -2rem;
   transform: rotate(165deg);
 }
-.nav__img-2 {
+.nav-img-2 {
   width: 50px;
   right: -1rem;
   bottom: 0;
@@ -229,48 +229,48 @@ img {
   position: relative;
 }
 
-.home__container {
+.home-container {
   row-gap: 3rem;
   justify-self: center;
 }
-.home__data {
+.home-data {
   text-align: center;
 }
 
-.home__title {
+.home-title {
   font-size: var(--biggest-font-size);
   font-family: var(--title-font);
   margin-bottom: 1rem;
 }
 
-.home__title img {
+.home-title img {
   width: 40px;
 }
 
-.home__title div {
+.home-title div {
   display: flex;
   align-items: center;
   justify-content: center;
   column-gap: 0.5rem;
 }
-.home__description {
+.home-description {
   padding: 0 1rem;
   margin-bottom: 2.5rem;
 }
 
-.home__leaf-1,
-.home__leaf-2 {
+.home-leaf-1,
+.home-leaf-2 {
   position: absolute;
   opacity: 0.2;
 }
 
-.home__leaf-1 {
+.home-leaf-1 {
   width: 80px;
   top: 8rem;
   left: -1rem;
   transform: rotate(90deg);
 }
-.home__leaf-2 {
+.home-leaf-2 {
   width: 100px;
   right: -2rem;
   bottom: 1rem;
@@ -299,4 +299,107 @@ img {
 
 .button:hover i {
   transform: translateX(0.25rem);
+}
+
+.about {
+  position: relative;
+}
+
+.about-container {
+  row-gap: 3rem;
+}
+.about-data {
+  text-align: center;
+}
+
+.about-title img {
+  width: 30px;
+}
+.about-title div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.about-img {
+  width: 300px;
+  justify-self: center;
+}
+
+.about-leaf {
+  width: 100px;
+  opacity: 0.2;
+  position: absolute;
+  right: -1.5rem;
+  bottom: 11rem;
+  transform: rotate(-15deg);
+}
+
+.popular-container {
+  padding-top: 4rem;
+  grid-template-columns: 250px;
+  justify-content: center;
+  row-gap: 5.5rem;
+}
+
+.popular-card {
+  position: relative;
+  background-color: var(--container-color);
+  padding: 7rem 2rem 1.5rem;
+  box-shadow: 0 8px 20px hsla(19, 64%, 48%, 0.08);
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.popular-img {
+  width: 220px;
+  position: absolute;
+  inset: 0;
+  top: -2rem;
+  margin: 0 auto;
+  transition: transform 0.4s;
+}
+
+.popular-name {
+  font-size: var(--h3-font-size);
+  font-family: var(--title-font);
+  margin-bottom: 0.25rem;
+}
+
+.popular-description {
+  display: block;
+  font-size: var(--smaller-font-size);
+  margin-bottom: 1rem;
+}
+
+.popular-price {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  color: var(--first-color);
+}
+
+.popular-button {
+  display: flex;
+  position: absolute;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  cursor: pointer;
+
+  background-color: var(--first-color);
+  padding: 6px;
+  border-radius: 50%;
+  border: none;
+  font-size: 1.25rem;
+  box-shadow: 0 4px 20px hsla(19, 64%, 28%, 0.2);
+  outline: none;
+  color: white;
+  transition: backgorund 0.3s;
+}
+.popular-button :hover {
+  background-color: var(--first-color-alt);
+}
+
+.popular-card:hover .popular-img{
+  transform: translateY(-0.25rem);
 }

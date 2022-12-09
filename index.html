@@ -22,46 +22,46 @@
   <body>
     <header class="header" id="header">
       <nav class="nav container">
-        <a href="#" class="nav__logo">
+        <a href="#" class="nav-logo">
           <img src="/assets/img/logo.png" alt="logo image" />
           Sushi
         </a>
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link">Home</a>
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
             </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">About</a>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
             </li>
-            <li class="nav__item">
-              <a href="#popular" class="nav__link">Popular</a>
+            <li class="nav-item">
+              <a href="#popular" class="nav-link">Popular</a>
             </li>
-            <li class="nav__item">
-              <a href="#recently" class="nav__link">Recently</a>
+            <li class="nav-item">
+              <a href="#recently" class="nav-link">Recently</a>
             </li>
           </ul>
           <!--Close button-->
-          <div class="nav__close" id="nav-close">
+          <div class="nav-close" id="nav-close">
             <i class="ri-close-line"></i>
           </div>
           <img
             src="assets/img/leaf-branch-4.png"
             alt="nav image"
-            class="nav__img-1"
+            class="nav-img-1"
           />
           <img
             src="assets/img/leaf-branch-3.png"
             alt="nav image"
-            class="nav__img-2"
+            class="nav-img-2"
           />
         </div>
 
-        <div class="nav__buttons">
+        <div class="nav-buttons">
           <!--Theme BTN-->
           <!--<i class="ri-moon-line change-theme" id="theme-button"></i>-->
           <!--Toggle BTN-->
-          <div class="nav__toggle" id="nav-toggle">
+          <div class="nav-toggle" id="nav-toggle">
             <i class="ri-apps-2-line"></i>
           </div>
         </div>
@@ -70,17 +70,17 @@
 
     <main class="main">
       <section class="home section" id="home"></section>
-      <div class="home__container container grid">
+      <div class="home-container container grid">
         <img src="/assets/img/home-sushi-rolls.png" alt="home image" />
-        <div class="home__data">
-          <h1 class="home__title">
+        <div class="home-data">
+          <h1 class="home-title">
             Enjoy Delicious
             <div>
               <img src="/assets/img/home-sushi-title.png" alt="home image" />
               Sushi Food
             </div>
           </h1>
-          <p class="home__description">
+          <p class="home-description">
             Enjoy a good dinner with the best dishes in the restaurant and
             improve your day.
           </p>
@@ -93,12 +93,80 @@
       <img
         src="/assets/img/leaf-branch-2.png"
         alt="home image"
-        class="home__leaf-1"
+        class="home-leaf-1"
       />
-      <img src="/assets/img/leaf-branch-4.png" alt="" class="home__leaf-2" />
-      <section class="about section" id="about"></section>
-
+      <img src="/assets/img/leaf-branch-4.png" alt="" class="home-leaf-2" />
+      <section class="about section" id="about">
+        <div class="about-container container grid">
+          <div class="about-data">
+            <span class="section-subtitle">About Us</span>
+            <h2 class="section-title about-title">
+              <div>
+                We Provide
+                <img src="/assets/img/about-sushi-title.png" alt="about page" />
+              </div>
+              Healthy Food
+            </h2>
+            <p class="about-description">
+              Food comes to us from our relatives, whether they have wings or
+              roots. This is how we consider food, it also has a culture. It has
+              a history that passes from generation to generation.
+            </p>
+          </div>
+          <img
+            src="/assets/img/about-sushi.png"
+            alt="about"
+            class="about-img"
+          />
+        </div>
+        <img src="/assets/img/leaf-branch-1.png" alt="" class="about-leaf" />
+      </section>
       <section class="popular section" id="popular"></section>
+      <span class="section-subtitle">Best Food</span>
+      <h2 class="section-title about-title">Popular Dishes</h2>
+      <div class="about-container container grid">
+        <article class="popular-card">
+          <img
+            src="/assets/img/popular-onigiri.png"
+            alt="onigiri"
+            class="popular-img"
+          />
+          <h3 class="popular-name">Onigiri</h3>
+          <span class="popular-description">Japanese Dish</span>
+          <span class="popular-price"></span>
+          <button class="popular-button">
+            <i class="ri-shopping-bag-line"></i>
+          </button>
+        </article>
+
+        <article class="popular-card">
+          <img
+            src="/assets/img/popular-sushi-rolls.png"
+            alt="onigiri"
+            class="popular-img"
+          />
+          <h3 class="popular-name">Sushi</h3>
+          <span class="popular-description">Japanese Dish</span>
+          <span class="popular-price">90₺</span>
+          <button class="popular-button">
+            <i class="ri-shopping-bag-line"></i>
+          </button>
+        </article>
+
+        <article class="popular-card">
+          <img
+            src="/assets/img/popular-spring-rols.png"
+            alt="onigiri"
+            class="popular-img"
+          />
+          <h3 class="popular-name">Spring Rolls</h3>
+          <span class="popular-description">Japanese Dish</span>
+          <span class="popular-price">60₺</span>
+          <button class="popular-button">
+            <i class="ri-shopping-bag-line"></i>
+          </button>
+        </article>
+      </div>
 
       <section class="recently section" id="recently"></section>
 
