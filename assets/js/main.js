@@ -28,3 +28,13 @@ const scrolHeader = () => {
 }
 
 window.addEventListener('scroll', scrolHeader)
+const scrollUp = () => {
+  const scrollUp = document.getElementById('scroll-up')
+  if (this.scrollY >= 350) {
+    scrollUp.style="display:flex;"
+  } else {
+    scrollUp.style = 'display:none;'
+  }
+}
+
+window.addEventListener('scroll', scrollUp)
