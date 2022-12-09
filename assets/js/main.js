@@ -59,3 +59,16 @@ const scrollActive = () => {
   })
 }
 window.addEventListener('scroll', scrollActive)
+
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: '2500',
+  delay: '400',
+})
+
+sr.reveal('.home-img, .newsletter-container')
+sr.reveal('.home-data', { origin: 'bottom' })
+sr.reveal('.about-data, .recently-data', { origin: 'left' })
+sr.reveal('.about-img, .recently-img', { origin: 'right' })
+sr.reveal('.popular-card', { intervar: 100 })
